@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Mon Cursus Professionnel</title>
+
+		<style type="text/css">
+		/* CSS */
+		/* reset css */
+        *{ margin: 0;
+           padding: 0; 
+           box-sizing: border-box;
+        }
+		:root {
+
+            --primary-color: #2c3e50;
+            /* --secondary-color: #3498db;  */
+            /* --text-color: #333; */
+            --background-color: #f5f6fa;
+            --spacing-unit: 1rem;
+        }
+		
+	
+		input{ color:aliceblue;
+				border-bottom: 10px;
+				border-radius: 10px;
+				margin-top: 10px;
+				/* border: solid 2px rgb(44, 44, 139); */
+				box-shadow: 2px 2px 4px;
+                width: 200px;
+                height:40px;
+		}
+		body{ background-image: url("plage.png");
+                font-size: 20;
+	
+			
+				background-size: cover;
+		}
+		.footer { background-color: rgb(97, 92, 228);
+				
+					color: rgb(26, 26, 28);
+					text-align: center;
+					font-weight: bold;
+
+					padding-top: 15px;
+					padding-bottom: 15px;
+					width: 100%;
+                    height: 8rem;
+					/* height: */
+					border-radius: 50px 0 50px 0;
+                    line-height: 0.9
+				
+				}
+        
+			
+		img{box-shadow: 4px 4px 10px
+			rgba(0,0,0,0.4);
+			width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            
+		}	
+		
+		textarea{ margin-top: 15px;
+				box-shadow: 4px 5px 4px;	
+		}
+		.btn { position: relative;
+				right: 20px;
+			width: 100px;
+				text-align: center;
+				border-radius: 5px;
+				margin-left: 20px;
+				margin-bottom: 20px;
+				background-color: rgb(16, 16, 119);
+			color: rgb(233, 238, 243);
+			font-size:20px;
+			text-shadow: 0 1px 0 #999;
+            margin-left: 100px;
+		
+		}
+		
+		.logo { 
+                color:  white;	
+                font-size: 1.5rem;
+                font-weight: bold;
+        }
+		.burger {
+            display: block;
+            display: none;
+            cursor: pointer;
+            color: white
+        }
+
+        .burger div {
+                width: 25px;
+                height: 3px;
+                background-color: rgb(236, 229, 235);
+                margin: 5px;
+                transition: all 0.3s ease;
+
+        }
+
+        nav {
+                background-color: var(--primary-color);
+                padding: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 1000;
+
+        }
+
+        .nav-links{
+                display: flex;
+                list-style: none;
+                gap: 2rem;
+                /* color: white; */
+                position: relative;
+                z-index: 1000;
+                margin-bottom: 40px;
+                
+        }
+        
+        /* # apropos { margin-top: 40px;}   */
+        .brian {
+                margin-top:120px;
+        }   
+
+        
+        .nav-links.active{
+            transform: translateX(0%);
+        }
+
+
+        .nav-links a {  text-decoration: none; 
+			/* color:rgb(48, 33, 62); */
+            
+            transition: 0.3s ease-in-out;
+            color: white;
+            
+        }
+
+		
+
+
+		.nav-links a::after {color:rgb(8, 15, 196);
+            content:'';
+            height: 2px;
+            background-color: #fff;
+            width: 100%;
+            /* position: absolute; */
+            bottom: -5px;
+            right: 0;
+            transition: 0.3s all ease
+        }			
+		.nav-links a:hover::after {color:rgb(8, 15, 196);
+            
+            width: 100%;
+            left: 0;
+        }								
+			
+		body {font-size: 1.5em}
+		
+		@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #000;
+        --secondary-color: #fff;
+        --text-color: #000;
+        --background-color: #fff;
+    }
+}
+    
+@media only screen  and (max-width: 680px){ 
+    .nav-links{
+        display: none;}
+        
+    }
+    
+@media only screen  and (min-width: 700px){ 
+    .burger{
+        display: none;
+        
+    }
+}
+
+    .burger svg {
+
+        stroke: #fff;
+        width: 22px;
+        height: 22px;
+    }
+.burger {  
+    display: block;
+}
+
+
+	</style>
+
+	</head>
+
+	<body>
+	<header>	
+	<nav>
+		<div class="logo">Brian Kernighan</div>			
+				
+		<ul class="nav-links">
+			<li><a href="#apropos">A propos</a></li>
+			<li><a href="#mescreations">Loisirs</a></li>
+			<li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            
+        </div>
+	</nav>
+    <div class="burger">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+</svg>
+</div>
+</header>
+
+<section id="apropos">
+    <div class="brian">
+		<h2>À propos de moi</h2>	
+		<p>Je m'appelle <strong>Brian Kernighan</strong>, je suis développeur web passioné par la 
+		technologie.</p>
+		<img src="https://mimo.app/i/greece.png"> <hr>
+    </div>    
+</section>
+
+<section id="mescreations">
+		<h2><strong>Mes créations</strong></h2>	
+		<ul id="text">
+				<li><strong>Hello, world</strong>, (Bonjour, le monde), un programme initialement écrit par Brian Kernighan de Bell Labs dans Un tutoriel d'introduction au B2</li>
+				<li><strong>awk,</strong>avec Alfred Aho et Peter Weinbeger, et son livre The AWK Programming Language</li>
+				<li>Le langage de programmation AMPL</li>
+				<li>The Elements of Programming Style, avec P.J.Plauger(en)</li>
+				<li>RatFor, avec P.J.Plauger</li>
+				<li>Software Tools in Pascal un livre et un ensemble d'outils pour Pascalc, avec P.J.Plauger</li>
+				<li>Unix programming Environment, un livre tutoriel avec Rob Pike </li>
+				<li>The C Programming language, le premier livre sur le C avec Dennis Ritchie, son créateur</li>
+				<li>Le langage de composition pic pour troff</li>
+				<li>Le langage de composition eqn pour troff avec Lorinda Cherry</li>
+				<li>La pratique de la programmation, avec Rob Pike</li>
+				<li>Why Pascal is not my favorite Programming Language(Pourquoi le Pascal n'est pas mon langage de programmation favori), une critique populaire de Pascal, le langage de programmation - Pascal), la critique a été écrite avant que l'ISO 7185 ait été créé.</li>
+				<li>ditroff, ou "device independent troff " qui a permis à troff d'être utilisé avec n'importe quel appareil</li>
+				<li>Le langage de traitement de macros M4, avec Dennis Ritchie</li>
+		</ul>
+</section>
+
+			<h2>J'ai travaillé pour</h2>
+			<ul>
+			<li>Laboratoires Bell (1969-2000)</li>
+			<li>Université de Princeton</li>
+			<li>Laboratoires Bell</li>
+			<li>Project MAC(d)(1968-1969)</li>
+			</ul>
+<!-- </div> -->
+<section id="contact">
+  	<h2>Contactez moi</h2>
+
+  		<div >
+			<input type="text" name="nom" placeholder="Merci d'entrer votre nom" required>
+		</div>	
+		<div>
+		<input type="email" name="email" placeholder="Votre mail préferé">
+		</div>
+		<div>
+		<textarea name="comments" rows="4" cols="50"></textarea>
+		</div>
+		<div>
+		<button class="btn">Ajout</button>
+		</div>
+ </section>		
+
+
+<footer>
+	<div class="footer">
+		<h4 >Mes coordonnées</h4>
+		<p>St brieux les places</p>
+			<p>46000 Orléans</p><br>
+			<p>&#9990 512-455-988</p>		      
+	</div>
+</footer>
+
+</body>
+
+	
+</html>

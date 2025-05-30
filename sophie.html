@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Mon Cursus Professionnel</title>
+
+		<style type="text/css">
+		/* CSS */
+		
+		
+		
+	
+		input{ color:aliceblue;
+				border-bottom: 10px;
+				border-radius: 10px;
+				margin-top: 10px;
+				/* border: solid 2px rgb(44, 44, 139); */
+				box-shadow: 2px 2px 4px;
+		}
+		body{ background-image: url("plage.png");
+	
+			
+				background-size: cover;
+		}
+			footer{background-color: rgb(97, 92, 228);
+				
+					color: rgb(188, 188, 195);
+					text-align: center;
+					font-weight: bold;
+					padding-top: 15px;
+					padding-bottom: 15px;
+					width: 200px;
+					height: 200px;
+					border-radius: 50px 0 50px 0;
+				
+				}
+
+
+			.footer{line-height: 0.2;}		
+			
+		img{box-shadow: 4px 4px 10px
+			rgba(0,0,0,0.4);
+			width: 300px;
+		}	
+		
+		textarea{ margin-top: 15px;
+				box-shadow: 4px 5px 4px;	
+		}
+		.btn { position: relative;
+				right: 20px;
+			width: 100px;
+				text-align: center;
+				border-radius: 5px;
+				margin-left: 20px;
+				margin-bottom: 20px;
+				background-color: rgb(16, 16, 119);
+			color: rgb(233, 238, 243);
+			font-size:20px;
+			text-shadow: 0 1px 0 #999;
+		
+		}
+		
+			
+		a{  text-decoration: none; 
+			color:rgb(48, 33, 62);
+
+		}
+		.brian{ font-family: cursive;
+				color: blue;
+		}
+		a:hover{color:rgb(8, 15, 196)}			
+							
+			
+		    body {font-size: 1.5em}
+		
+		@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #000;
+        --secondary-color: #fff;
+        --text-color: #000;
+        --background-color: #fff;
+    }
+
+
+		</style>
+
+	</head>
+
+	<body>
+		<!-- HTML -->
+		<h1 class="brian">Brian Kernighan</h1>
+		<ul>
+			<li><a href="#apropos">A propos</a></li>
+			<li><a href="#mescreations">Loisirs</a></li>
+			<li><a href="#contact">Contact</a></li>
+        </ul>
+<!-- <div>  -->
+<section id="apropos">
+		<h2>À propos de moi</h2>	
+		<p>Je m'appelle <strong>Brian Kernighan</strong>, je suis développeur web passioné par la 
+		technologie.</p>
+		<img src="https://mimo.app/i/greece.png"> <hr>
+</section>
+
+<section id="mescreations">
+		<h2><strong>Mes créations</strong></h2>	
+		<ul id="text">
+				<li><strong>Hello, world</strong>, (Bonjour, le monde), un programme initialement écrit par Brian Kernighan de Bell Labs dans Un tutoriel d'introduction au B2</li>
+				<li><strong>awk,</strong>avec Alfred Aho et Peter Weinbeger, et son livre The AWK Programming Language</li>
+				<li>Le langage de programmation AMPL</li>
+				<li>The Elements of Programming Style, avec P.J.Plauger(en)</li>
+				<li>RatFor, avec P.J.Plauger</li>
+				<li>Software Tools in Pascal un livre et un ensemble d'outils pour Pascalc, avec P.J.Plauger</li>
+				<li>Unix programming Environment, un livre tutoriel avec Rob Pike </li>
+				<li>The C Programming language, le premier livre sur le C avec Dennis Ritchie, son créateur</li>
+				<li>Le langage de composition pic pour troff</li>
+				<li>Le langage de composition eqn pour troff avec Lorinda Cherry</li>
+				<li>La pratique de la programmation, avec Rob Pike</li>
+				<li>Why Pascal is not my favorite Programming Language(Pourquoi le Pascal n'est pas mon langage de programmation favori), une critique populaire de Pascal, le langage de programmation - Pascal), la critique a été écrite avant que l'ISO 7185 ait été créé.</li>
+				<li>ditroff, ou "device independent troff " qui a permis à troff d'être utilisé avec n'importe quel appareil</li>
+				<li>Le langage de traitement de macros M4, avec Dennis Ritchie</li>
+		</ul>
+</section>
+
+			<h2>J'ai travaillé pour</h2>
+			<ul>
+			<li>Laboratoires Bell (1969-2000)</li>
+			<li>Université de Princeton</li>
+			<li>Laboratoires Bell</li>
+			<li>Project MAC(d)(1968-1969)</li>
+			</ul>
+<!-- </div> -->
+<section id="contact">
+  	<h2>Contactez moi</h2>
+
+  		<div >
+			<input type="text" name="nom" placeholder="Merci d'entrer votre nom" required>
+		</div>	
+		<div>
+		<input type="email" name="email" placeholder="Votre mail préferé">
+		</div>
+		<div>
+		<textarea name="comments" rows="4" cols="50"></textarea>
+		</div>
+		<div>
+		<button class="btn">Ajout</button>
+		</div>
+ </section>		
+
+
+<footer>
+	<div class="footer">
+		<h4 style="color: rgb(28, 16, 2);  text-align: center;">Mes cordonnées</h4>
+		<p>St brieux les places</p>
+			<p>46000 Orléans</p>
+			<p>&#9990 512-455-988</p>		      
+	</div>
+</footer>
+
+</body>
+
+	
+</html>
